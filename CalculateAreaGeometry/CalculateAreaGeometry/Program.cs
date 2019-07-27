@@ -6,17 +6,17 @@ namespace CalculateAreaGeometry
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Udregning af areal og rumfang");
-            Console.WriteLine("1) Frikant / Kasse");
-            Console.WriteLine("2) Trekant / Pyramide");
-            Console.WriteLine("3) Cirkel / Kugle ");
-            Console.WriteLine("4) Afslut");
-
-            Console.Write("Dit svar: ");
-            int choice = int.Parse(Console.ReadLine());
-
             while (true)
             {
+                Console.WriteLine("Udregning af areal og rumfang");
+                Console.WriteLine("1) Frikant / Kasse");
+                Console.WriteLine("2) Trekant / Pyramide");
+                Console.WriteLine("3) Cirkel / Kugle ");
+                Console.WriteLine("4) Afslut");
+
+                Console.Write("Dit svar: ");
+                int choice = int.Parse(Console.ReadLine());
+
                 switch (choice)
                 {
                     case 1:
@@ -53,7 +53,7 @@ namespace CalculateAreaGeometry
                             int lengthTriInput = int.Parse(Console.ReadLine());
 
                             //objekt af klasssen
-                            Triangel triangel = new Triangel(heightTriInput, baselineTriInput, lengthTriInput );
+                            Triangel triangel = new Triangel(heightTriInput, baselineTriInput, lengthTriInput);
 
                             //udregning
                             Console.Write("Arealet af trekanten: ");
