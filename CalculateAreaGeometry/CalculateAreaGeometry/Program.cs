@@ -45,16 +45,38 @@ namespace CalculateAreaGeometry
                         {
                             //Trekant - højde, grundlinje, længde
                             //indtastning
+                            Console.Write("Indtast højden af trekanten: ");
+                            int heightTriInput = int.Parse(Console.ReadLine());
+                            Console.Write("Indtast grundlinjen af trekanten: ");
+                            int baselineTriInput = int.Parse(Console.ReadLine());
+                            Console.Write("Indtast længden af trekanten: ");
+                            int lengthTriInput = int.Parse(Console.ReadLine());
+
+                            //objekt af klasssen
+                            Triangel triangel = new Triangel(heightTriInput, baselineTriInput, lengthTriInput );
 
                             //udregning
+                            Console.Write("Arealet af trekanten: ");
+                            triangel.CalculateArea();
+                            Console.Write("Rumfanget af pyramiden: ");
+                            triangel.CalculateVolume();
                             break;
                         }
                     case 3:
                         {
                             //Cirkel - radius
                             //indtastning
+                            Console.Write("Indtast radiussen: ");
+                            int radius = int.Parse(Console.ReadLine());
+
+                            //objekt af klassen
+                            Cirkel cirkel = new Cirkel(radius);
 
                             //udregning
+                            Console.Write("Arealet af cirkel: ");
+                            cirkel.CalculateArea();
+                            Console.Write("Rumfanget af kuglen: ");
+                            cirkel.CalculateVolume();
                             break;
                         }
                     case 4:
