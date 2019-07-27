@@ -21,18 +21,28 @@ namespace CalculateAreaGeometry
                 {
                     case 1:
                         {
+                            //indtastning
+
+                            //udregning
                             break;
                         }
                     case 2:
                         {
+                            //indtastning
+
+                            //udregning
                             break;
                         }
                     case 3:
                         {
+                            //indtastning
+
+                            //udregning
                             break;
                         }
                     case 4:
                         {
+                            Environment.Exit(0);
                             break;
                         }
                 }
