@@ -21,13 +21,29 @@ namespace CalculateAreaGeometry
                 {
                     case 1:
                         {
+                            //Firkant / kasse- højde, længde, bredte
                             //indtastning
+                            Console.Write("Indtast højde: ");
+                            int heightSquareInput = int.Parse(Console.ReadLine());
+                            Console.Write("Indtast Længden: ");
+                            int lengthSquareInput = int.Parse(Console.ReadLine());
+                            Console.Write("Indtast bredten: ");
+                            int widthSquareInput = int.Parse(Console.ReadLine());
+
+                            //objekt af square klassen
+                            Square square = new Square(heightSquareInput, lengthSquareInput, widthSquareInput);
 
                             //udregning
+                            Console.Write("Arealet af firkanten: ");
+                            square.CalculateArea();
+                            Console.Write("Rumfanget af kassen: ");
+                            square.CalculateVolume();
+
                             break;
                         }
                     case 2:
                         {
+                            //Trekant - højde, grundlinje, længde
                             //indtastning
 
                             //udregning
@@ -35,6 +51,7 @@ namespace CalculateAreaGeometry
                         }
                     case 3:
                         {
+                            //Cirkel - radius
                             //indtastning
 
                             //udregning
